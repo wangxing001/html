@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* ul li{
+				/* ul下的所有li标签都可以使用下面的css样式 */
+				color:red;
+			} */
+			/* ul>li{
+				/* 父子关系 */
+				color:blue;
+			} */
+			/* #aa+li{
+				color:green;
+			} */
+			/* 兄弟关系 */
+			#aa~li{
+				color:palegreen;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 关系选择器
+			1.包含关系选择器
+			2.父子选择器
+			3.相邻关系选择器
+			4.兄弟关系选择器		 
+		 -->
+		<ul>
+			<li id="aa">first</li>
+			<li>second
+				<h1>
+					<ol>
+					<li>子选项1</li>
+					<li>子选项2</li>
+					<li>子选项3</li>
+					</ol>
+				</h1>				
+			</li>
+			<li>third</li>
+		</ul>
+		<li>forth</li>
+		<p>
+			<li>fifth</li>
+		</p>
+	</body>
+</html>

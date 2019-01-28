@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="cl" width="400px" height="400px" style="border:blueviolet;"></canvas>
+		<script>
+			//通过id找到画布对象(先有id再写脚本)
+			var canv = document.getElementById("cl");
+			//找到画布对象上可以用于绘画的context
+			var ctx = canv.getContext("2d");
+			//设置图形样式
+			ctx.fillStyle = "aqua";
+			//设置绘制内容
+			ctx.fillRect(0,0,400,400);
+		</script>
+	</body>
+</html>

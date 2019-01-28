@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			a:link{
+				/* 设置未访问的颜色 */
+				color:#red;
+			}
+			a:visited{
+				/* 设置已经访问过的颜色 */
+				color:green;
+			}
+			#d1{
+				width:400px;
+				height:400px;
+				background:blueviolet;
+			}
+			/* 鼠标移动上 */
+			#d1:hover{
+				width:120px;
+				height:120px;
+				background:yellowgreen;
+			}
+			#d2{
+				width:120px;
+				height:30px;
+				line-height:30px;
+				text-align:center;
+				margin-top:20px;
+				background:navy;
+			}
+			#d2:active{
+				/* 鼠标点击 */
+				color:red;
+			}
+			/* 除了某一个,其他的都行 */
+			p:not(#p1){
+				color:orangered;
+			}
+			li:first-child{
+				/* li是第一个孩子,父亲是谁不重要（body除外） */
+				color:chartreuse;
+			}
+			/* E是某一个元素的最后一个孩子 */
+			li:last-child{
+				color:blue;
+			}
+			/* E是某一个元素的唯一孩子*/
+			span:only-child{
+				background-color:orchid;
+			}
+			/* E是空标签 */
+			p:empty{
+				width:100px;
+				height:20px;
+				background:gold;	
+			}
+			/* E如果被选中, */
+			option:checked{
+				color:skyblue;
+			}
+			/* 选中E,处理相邻标签 */
+			input:checked+span{
+				color:orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<li>start现象1234</li>
+		<a href="#">百度一下</a><br />
+		<div id="d1"></div><br />
+		<div id="d2">请点击我</div>
+		
+		<p>百度百度1</p>
+		<p id="p1">百度百度2</p>
+		<p>百度百度3</p>
+		<p>百度百度4</p>
+		
+		<ul id="uu">
+			<li>现象1</li>
+			<li>现象12</li>
+			<li>现象123</li>
+			<li>现象1234</li>
+		</ul>
+		<li>end现象1234</li>
+		
+		<p>
+			<span>天天</span>
+		</p>
+		<h1>
+			<a href="#">tiaozhuan</a>	
+		</h1>
+		
+		<p></p>
+		<p>123</p>
+		<p>2223</p>
+		<select>
+			<option>选项1</option>
+			<option>选项3</option>
+			<option>选项54</option>
+			<option>选项7</option>
+		</select>
+	</body>
+	<hr />
+	<input name="gender" type="radio" checked /><span>男</span><br />
+	<input name="women" type="radio" /><span>女</span><br />
+</html>

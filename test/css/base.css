@@ -1,0 +1,7 @@
+@import url("t_div.css");
+/*
+	为所有的p标签设置css样式
+*/
+p{
+	background-color: black;
+}

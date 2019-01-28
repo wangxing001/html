@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			table{
+				/* 设置边框线的宽度 */
+				/* border-width:2px;
+				/* 设置边框线的颜色（默认看不见） */
+				/*border-color:royalblue;*/
+				/* 设置边框线的样式 */
+				/*border-style: double; */
+				/* 设置某个方向的线 */
+				/* border-bottom-color:red;
+				border-bottom-style: dotted;
+				border-bottom-width:2px; */
+				/* 复合标签 */
+				/* border-bottom: red solid 1px; */
+				border: 1px dashed red;
+				/* 设置表格的边框线合并 */
+				border-collapse: collapse;
+			}
+			td{
+				border : 1px dashed blue;
+			}
+			#div1{
+				width:200px;
+				height:150px;
+				border:1px solid #00BFFF;
+			}
+			a{
+				display:inline-block;
+				width:60px;
+				text-decoration:none;
+				text-align:center;
+				/* 设置边框线 */
+				border-right:1px black solid;
+			}
+			a:not(#aa){
+				border-right:1px black solid;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="400px" cellspacing="0px">
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		<br />
+		<div id="div1"></div>
+		<div>
+			<a href="#">导航1</a>
+			<a href="#">导航2</a>
+			<a href="#">导航3</a>
+			<a id="aa" href="#">导航4</a>
+		</div>
+	</body>
+</html>

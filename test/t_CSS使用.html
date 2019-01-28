@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 颜色覆盖 -->
+		<style>
+			/* 内部CSS(处理P标签) */
+			
+			p{
+				/*设置背景颜色*/
+				background-color: red;
+			}
+		</style>
+		<!-- 使用外部css -->
+		<link rel="stylesheet" href="css/base.css" />
+		<style>
+			@import url("css/t_div.css");
+		</style>
+	</head>
+	<body>
+		<!-- 使用标签的style属性设置CSS样式 -->
+		<span style="background-color: green;">CSS样式</span>
+		<p>今天天气好晴朗</p>
+		<p>今天天气好晴朗</p>
+		<p>今天天气好晴朗</p>
+		<div>hello!</div>
+	</body>
+</html>

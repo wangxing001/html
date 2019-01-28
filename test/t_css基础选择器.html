@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 使用内部css样式 -->
+		<style>
+			/* 通用选择器 */
+			*{
+				/* 取消所有外间距 */
+				margin: 0px;
+				background-color: #FF0000;
+				
+			}
+			/* id选择器 */
+			#d1,#p1{
+				background-color:deepskyblue;
+			}
+			/* 类选择器 */
+			.label{
+				background-color:green;
+				margin:10px;
+			}
+			.blue{
+				color:blue;
+			}
+			/* 标签选择器 */
+			input{
+				width:220px;
+				height:23px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!-- 关系选择器
+			1.通用选择器
+			2、id选择器(在html中唯一)
+			3.类选择器
+			4.标签选择器
+		-->
+		<div id="d1">ddd</div>
+		<p>fff</p>
+		<p id='p1'>fff222</p>
+		<!-- 使用多个选择器 -->
+		<h1 class="label blue">label1</h1>
+		<h2 class="label">label2</h2>
+		<h3 class="label">label3</h3>
+		<h4 class="label">label4</h4>
+		
+		<input /><br /><br />
+		<input /><br /><br />
+		<input /><br /><br />
+		<input /><br /><br />
+	</body>
+</html>

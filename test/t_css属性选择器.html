@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* input{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 只要包含属性 */
+			/* input[name]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 属性值是固定值 */
+			/* input[name=username]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 包含某个完整的值 */
+			/* input[class~=p1]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 属性的值包含某个完整的值 */
+			/* input[name^=a]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 属性的值以某一个值结尾 */
+			/* input[name$=me]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 属性的值包含某一个值(不完整) */
+			/* input[name*=e]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			} */
+			/* 属性的值必须包含-,一某一个值开头 */
+			input[name|=file]{
+				width:220px;
+				height:30px;
+				background:#008000;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<input /><br />
+		<input name="file-a1" /><br />
+		<input name="file-ae2" /><br />
+		<input name="username" /><br />
+		<input class="p1 blue p2" /><br />
+		<input class="p1 p2 filename" /><br />
+	</body>
+</html>

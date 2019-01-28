@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			标签分类：
+			1.块级标签：单独占据一行，所以自动换行
+			2.内联标签：不会换行
+		-->
+		<!--- 块级标签 -->
+		<!-- margin对外间距（上下左右）-->
+		<div style="background: blue;margin-top: 20px;margin-left: 20px;"><h2>hello world</h2></div>
+		<!-- padding内间距 -->
+		<div style="background: orangered;padding-top: 20px;">hello world</div>
+		<hr />
+		<div style="background:lawngreen; width: 100px;height: 100px;"></div>
+		<div style="background:mediumvioletred; width: 100px;height: 100px;"></div>
+		<hr />
+		<!-- 内联标签 -->
+		<span style="background:blueviolet">hello 你好</span>
+		<span style="background:darkgoldenrod">hello 你好</span>
+		<!-- 内联标签没有宽和高，宽和高取决于文本 -->
+		<span style="background: goldenrod;width: 10px;"></span>
+		<!-- margin有左右，上下不起作用，因为没有换行能力 -->
+		<span style="background: goldenrod;margin-left: 20px;margin-left: 20px;">啊啊啊</span>
+		<hr />
+		<h2>原来的样子</h2>
+		<div style="background:red">你好</div>
+		<div style="background:red">你好</div>
+		<span style="background:gold">我好</span>
+		<span style="background:gold">我好</span>
+		<h2>现在的样子</h2>
+		<div style="background:red;display: inline;">你好</div>
+		<div style="background:red;display: inline;">你好</div>
+		<span style="background:gold;display:block">我好</span>
+		<span style="background:gold;display:block">我好</span>
+	</body>
+</html>

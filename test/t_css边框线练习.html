@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			td{
+				/* 右边和底部的边框线 */
+				border-right:1px green dashed;
+				border-bottom:1px green dashed;
+				height:40px;
+			}
+			/* 最后一个td去掉右边的边框线、 */
+			td:last-child{
+				border-right: none;
+			}
+			/* 最后一个tr的所有td不要底部的边框线 */
+			tr:last-child td{
+				border-bottom: none;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="80%" align="center" cellspacing="0px">
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
